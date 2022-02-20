@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <title><?php echo  $nome_site ?></title>
+    <title><?php echo $nome_site ?></title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../sistema/img/icone2" type="image/x-icon">
+    <link rel="shortcut icon" href="../sistema/img/icone2.png" type="image/x-icon">
 
     <!-- Font awesome -->
     <link href="assets/css/font-awesome.css" rel="stylesheet">
@@ -21,7 +21,7 @@
     <!-- Fancybox slider -->
     <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen" /> 
     <!-- Theme color -->
-    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">     
+    <link id="switcher" href="assets/css/theme-color/green-theme.css" rel="stylesheet">     
 
     <!-- Main style sheet -->
     <link href="style.css" rel="stylesheet">    
@@ -175,11 +175,11 @@
               <div class="col-md-6">
                 <div class="mu-about-us-right">                
                  <ul class="mu-abtus-slider">                 
-                   <li><img src="assets/img/about-us/abtus-img-1.png" alt="img"></li>
-                   <li><img src="assets/img/about-us/abtus-img-2.png" alt="img"></li>
-                   <li><img src="assets/img/about-us/abtus-img-6.png" alt="img"></li>
-                   <li><img src="assets/img/about-us/abtus-img-4.png" alt="img"></li>
-                   <li><img src="assets/img/about-us/abtus-img-5.png" alt="img"></li>
+                   <li><img src="assets/img/about-us/abtus-img-1.jpg" alt="img"></li>
+                   <li><img src="assets/img/about-us/abtus-img-2.jpg" alt="img"></li>
+                   <li><img src="assets/img/about-us/abtus-img-3.jpg" alt="img"></li>
+                   <li><img src="assets/img/about-us/abtus-img-4.jpg" alt="img"></li>
+                   <li><img src="assets/img/about-us/abtus-img-5.jpg" alt="img"></li>
                  </ul>
                 </div>
               </div>
