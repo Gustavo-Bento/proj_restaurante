@@ -1,6 +1,6 @@
 <?php
 //variaveis do projeto
-$url='http://localhost/restaurante/';
+$url='http://localhost/proj_restaurante/';
 $nome_site='Magalanches';
 $email_adm='gfmb94@gmail.com';
 $endereco_site='Rua x, Número 50, Bairro Centro - Salvador - BA CEP 89993-000';
@@ -19,5 +19,5 @@ $twitter='https://www.google.com/';
 $servidor='localhost';
 $usuario='root';
 $senha=''
-$banco-'restaurante';
+$banco='restaurante';
 ?>

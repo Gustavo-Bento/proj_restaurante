@@ -1,6 +1,7 @@
 <?
-php require_once("config.php");
+php require_once("conexao.php");
 //inserir um usuario adm caso não exista
+$pdo->query("INSERT INTO usuarios set nome ='Administrador', cpf='000.000.000-00', email='email_adm', senha='123', nivel='Admin'")
 
 ?>
 <!doctype html>
@@ -53,7 +54,7 @@ php require_once("config.php");
 		              <input type="password" class="form-control" placeholder="Digite sua senha" required>
 		            </div>
 		            <div class="form-group">
-		            	<button type="submit" class="form-control btn btn-primary rounded submit px-3">Acesar</button>
+		            	<button type="submit" class="form-control btn btn-primary rounded submit px-3">Acessar</button>
 		           <!-- </div>
 		            <div class="form-group d-md-flex">
 		            	<div class="w-50 text-left">
