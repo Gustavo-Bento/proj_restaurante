@@ -1,9 +1,26 @@
-<?
-php require_once("conexao.php");
+<?php 
+require_once("conexao.php");
 //inserir um usuario adm caso não exista
-$pdo->query("INSERT INTO usuarios set nome ='Administrador', cpf='000.000.000-00', email='email_adm', senha='123', nivel='Admin'")
 
+$query = $pdo->query(
+    "SELECT * from usuarios where
+    nivel = 'Administrador'");
+
+$res = $query->fetchAll(PDO::FETCH_ASSOC);
+$total_reg = @count($res);
+
+if($total_reg == 0){
+    $pdo->query(
+        "INSERT INTO usuarios set 
+        nome = 'Administrador', 
+        cpf= '000.000.000-00', 
+        email= 'gfmb94@gmail.com', 
+        senha= '123', 
+        nivel= 'Admin'"
+    );
+}
 ?>
+
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -47,11 +64,11 @@ $pdo->query("INSERT INTO usuarios set nome ='Administrador', cpf='000.000.000-00
 							<form action="autenticar.php" class="signin-form" method="post">
 			      		<div class="form-group mb-3">
 			      			<label class="label" for="name">Usuario</label>
-			      			<input type="text" class="form-control" placeholder="Digite seu login" required>
+			      			<input type="text" name="email" class="form-control" placeholder="Digite seu login" required>
 			      		</div>
 		            <div class="form-group mb-3">
 		            	<label class="label" for="password">Senha</label>
-		              <input type="password" class="form-control" placeholder="Digite sua senha" required>
+		              <input type="password" name="senha" class="form-control" placeholder="Digite sua senha" required>
 		            </div>
 		            <div class="form-group">
 		            	<button type="submit" class="form-control btn btn-primary rounded submit px-3">Acessar</button>

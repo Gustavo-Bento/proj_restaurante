@@ -18,6 +18,6 @@ $twitter='https://www.google.com/';
 //variaveis para o banco de dados
 $servidor='localhost';
 $usuario='root';
-$senha=''
+$senha='';
 $banco='restaurante';
 ?>
