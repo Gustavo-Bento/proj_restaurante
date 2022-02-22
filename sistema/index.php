@@ -1,4 +1,5 @@
 <?php 
+@session_start();
 require_once("conexao.php");
 //inserir um usuario adm caso não exista
 
